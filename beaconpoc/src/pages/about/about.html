@@ -7,5 +7,16 @@
 </ion-header>
 
 <ion-content padding>
-
+  <h2>Beacons</h2>
+  <button ion-button outline (click)="registerMonitoring()">Register monitoring</button>
+  <button ion-button color="secondary" outline (click)="startMonitoring()">Start monitoring</button>
+  <button ion-button color="danger" outline (click)="stopMonitoring()">Stop monitoring</button>
+  <!-- <button ion-button color="danger" (click)="showRegionState()">State</button> -->
+  <button ion-button (click)="getAuthorization()">Is authorized?</button>
+  
+  <ul>
+    <li *ngFor="let beacon of beacons">
+      <span class="badge">{{beacon.id}}</span> {{beacon.name}}
+    </li>
+  </ul>
 </ion-content>
