@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IBeacon } from '@ionic-native/ibeacon';
+import { File } from '@ionic-native/file';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { IBeacon } from '@ionic-native/ibeacon';
     StatusBar,
     SplashScreen,
     IBeacon,
+    File,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
